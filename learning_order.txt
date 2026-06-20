@@ -1,0 +1,49 @@
+Part 1: Foundations
+1. Networking Fundamentals **
+2. OSI Model **
+3. TCP/IP Model **
+
+Part 2: Addressing & Communication
+4. MAC Addresses **
+5. IP Addressing **
+6. Subnetting **
+7. Ports and Sockets **
+
+Part 3: Core Protocols
+8. TCP **
+9. UDP **
+10. DNS **
+11. DHCP **
+12. ARP **
+13. ICMP
+14. HTTP & HTTPS **
+
+Part 4: Network Infrastructure
+15. Routing
+16. Switching
+17. VLANs
+18. NAT
+19. Proxy Servers
+20. Wireless Networking
+
+Part 5: Practical Networking
+21. Wireshark
+22. Nmap
+
+Part 6: Networking for Cybersecurity
+23. Packet Sniffing
+24. ARP Poisoning
+25. DNS Spoofing
+26. Man-in-the-Middle Attacks
+27. Wi-Fi Attacks
+28. Firewalls
+29. IDS & IPS
+
+Part 7: Advanced Topics
+30. VPNs
+31. Tunneling
+32. Pivoting
+33. Network Segmentation
+34. Zero Trust Networking
+35. Load Balancers
+36. Cloud Networking Basics
