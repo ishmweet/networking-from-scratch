@@ -107,13 +107,6 @@ Go slow. The fundamentals compound.
 
 ---
 
-## Recommended Learning Path
-
-The modules are numbered in the intended order. Follow them sequentially — each topic builds on the previous one.  
-A suggested learning path is also available in [`learning_order.txt`](./learning_order.txt).
-
----
-
 ## Who This Is For
 
 - Complete beginners who want to understand networking properly before touching security tools
