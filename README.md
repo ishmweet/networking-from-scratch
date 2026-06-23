@@ -1,63 +1,142 @@
-# 🌐 Networking From Scratch
+<div align="center">
 
-Most beginners jump straight into hacking tools, CTFs, or cloud certifications — and hit a wall fast. That wall is almost always **networking**. You can't understand how attacks work if you don't know what a packet is. You can't debug infrastructure if you don't know what DNS does. You can't secure what you don't understand.
+# Networking From Scratch
 
-This repo exists to fix that. No shortcuts, no hand-waving — just networking built up properly, concept by concept.
+**A complete, self-paced networking curriculum for cybersecurity beginners.**  
+From how a packet moves across a wire to how attackers exploit that movement — built bottom-up, no shortcuts.
+
+![Topics](https://img.shields.io/badge/Topics-37-blue?style=flat-square)
+![Level](https://img.shields.io/badge/Level-Beginner%20→%20Intermediate-green?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Cybersecurity-red?style=flat-square)
+
+</div>
 
 ---
 
-## Why Beginners Fail
+## Why Networking Is the Real Prerequisite
 
-The most common mistake is treating networking as a checkbox. People memorize the OSI model layers for an exam and move on, never actually understanding *why* data gets encapsulated, or what happens at each hop. Then they get stuck the moment something breaks in the real world.
+Most beginners jump straight into hacking tools, bug bounties, or cloud certs — and hit a wall fast. That wall is almost always networking.
 
-The second mistake is skipping the boring stuff — subnetting, ARP, ICMP — because it doesn't feel exciting. But these are exactly the foundations that make attack techniques and defense strategies click later. If you don't know how ARP works, ARP poisoning is just a magic trick. If you know it deeply, you understand why it works and how to detect it.
+You can't understand how ARP poisoning works if you don't know what ARP is. You can't debug a firewall rule if you don't know how routing decisions are made. You can't read a Wireshark capture if you've never learned what a TCP handshake looks like.
+
+The pattern is always the same: skip the foundations, get stuck, go back and learn them anyway — except now under pressure, with gaps everywhere.
+
+**This repo is the foundation.** Work through it once, properly, and everything that comes after — CTFs, pentesting, cloud security, DevOps — will make actual sense.
+
+---
+
+## Where Beginners Go Wrong
+
+- **Memorizing without understanding.** Knowing the 7 OSI layers by name is useless. Knowing *why* they exist and what breaks when one fails — that's the skill.
+- **Skipping "boring" protocols.** ARP, DHCP, ICMP feel dry until you realize they're the backbone of the most common LAN attacks.
+- **Rushing to tools.** Nmap and Wireshark are force multipliers — but only if you already understand what you're looking at. Without the fundamentals, you're just running commands and hoping.
+- **No lab practice.** Reading notes without capturing real traffic or scanning a test machine means nothing sticks.
 
 Go slow. The fundamentals compound.
 
 ---
 
-## 📖 Chapters
+## Curriculum
 
-| # | Chapter | What You'll Learn |
-|---|---------|-------------------|
-| 01 | **Networking Fundamentals** | What a network is, how devices communicate, and the vocabulary you'll use everywhere else |
-| 02 | **OSI Model** | The 7-layer framework for understanding how data travels — not just names, but what each layer actually does |
-| 03 | **TCP/IP Model** | The real-world implementation of the OSI model, and how the internet is actually built |
-| 04 | **MAC Addresses** | Hardware-level addressing, how switches use MACs, and why they matter for local network attacks |
-| 05 | **IP Addressing** | IPv4/IPv6, address classes, public vs private IPs, and how every device on the internet gets identified |
-| 06 | **Subnetting** | Breaking networks into smaller pieces — critical for routing, firewalls, and network design |
-| 07 | **Ports and Sockets** | How applications talk over a network, what a socket is, and why port numbers matter for security |
-| 08 | **TCP** | The reliable, connection-oriented protocol — handshakes, flow control, and why it's used for most traffic |
-| 09 | **UDP** | The fast, connectionless alternative — when reliability is traded for speed |
-| 10 | **DNS** | How domain names resolve to IPs — one of the most attacked and misunderstood protocols |
-| 11 | **DHCP** | How devices automatically get IP addresses — and how attackers can abuse this process |
-| 12 | **ARP** | How IPs map to MAC addresses on a local network — the foundation of layer 2 attacks |
-| 13 | **ICMP** | The protocol behind `ping` and `traceroute` — used for diagnostics and recon |
-| 14 | **HTTP & HTTPS** | The backbone of the web, request/response cycles, headers, and what TLS actually protects |
-| 15 | **TLS/SSL Fundamentals** | How encrypted connections are established — certificates, handshakes, and common weaknesses |
-| 16 | **Routing** | How packets find their way across networks — static routes, dynamic protocols, and routing tables |
-| 17 | **Switching** | How traffic moves inside a local network, MAC tables, and how switches differ from routers |
-| 18 | **VLANs** | Logically segmenting a network on shared physical hardware — key for network isolation |
-| 19 | **NAT** | How private IPs reach the public internet — and the security implications of address translation |
-| 20 | **Proxy Servers** | Intermediaries between clients and servers — how they work, and why they're used for privacy and filtering |
-| 21 | **Wireless Networking** | How Wi-Fi works, 802.11 standards, authentication modes, and common wireless weaknesses |
-| 22 | **Wireshark** | Capturing and analyzing real network traffic — the most important skill for understanding protocols hands-on |
-| 23 | **Nmap** | Network scanning and host discovery — the go-to tool for mapping what's running on a network |
-| 24 | **Packet Sniffing** | Passively capturing traffic, what's visible in plaintext, and why encryption matters |
-| 25 | **ARP Poisoning** | Manipulating ARP tables to redirect traffic — a classic layer 2 attack explained from the ground up |
-| 26 | **DNS Spoofing** | Feeding false DNS responses to redirect users — how it works and how to detect it |
-| 27 | **Man-in-the-Middle Attacks** | Intercepting communication between two parties — combining multiple techniques into a full attack chain |
-| 28 | **Wi-Fi Attacks** | WPA2 cracking, evil twin APs, deauth attacks, and why public Wi-Fi is risky |
-| 29 | **Firewalls** | Filtering traffic with rules — stateless vs stateful, where firewalls sit, and what they can and can't stop |
-| 30 | **IDS & IPS** | Detecting and blocking malicious traffic — signatures, anomaly detection, and placement in a network |
-| 31 | **VPNs** | Encrypted tunnels over public networks — how they work, protocols used, and their limitations |
-| 32 | **Tunneling** | Encapsulating one protocol inside another — used for bypassing filters and maintaining access |
-| 33 | **Pivoting** | Using a compromised machine as a foothold to reach deeper into a network |
-| 34 | **Network Segmentation** | Dividing a network into zones to limit the blast radius of a breach |
-| 35 | **Zero Trust Networking** | The modern security model — never trust, always verify, regardless of network location |
-| 36 | **Load Balancers** | Distributing traffic across multiple servers — how they work and how they affect security |
-| 37 | **Cloud Networking Basics** | How networking concepts translate to AWS/Azure/GCP — VPCs, security groups, and cloud-specific attacks |
+### 🔧 Foundations
+
+| # | Topic | What You'll Learn |
+|---|-------|-------------------|
+| [01](./01%20-%20Networking%20Fundamentals/) | **Networking Fundamentals** | What networks are, how devices communicate, and the vocabulary used everywhere else in this field |
+| [02](./02%20-%20OSI%20Model/) | **OSI Model** | The 7-layer framework — not just the names, but what each layer *actually does* and what breaks when it fails |
+| [03](./03%20-%20TCP%20%26%20IP%20Model/) | **TCP/IP Model** | The real-world implementation of networking layers — how the internet is actually built |
+| [04](./04%20-%20MAC%20Addresses/) | **MAC Addresses** | Hardware-level addressing, how switches use MACs, and why they matter for local network attacks |
+| [05](./05%20-%20IP%20Addressing/) | **IP Addressing** | IPv4/IPv6, address classes, public vs. private IPs, and how every device on the internet gets identified |
+| [06](./06%20-%20Subnetting/) | **Subnetting** | Breaking networks into smaller pieces — critical for routing, firewalls, and understanding network design |
+| [07](./07%20-%20Ports%20and%20Sockets/) | **Ports and Sockets** | How applications talk over a network, what a socket is, and why port numbers matter for security |
+
+### 📡 Core Protocols
+
+| # | Topic | What You'll Learn |
+|---|-------|-------------------|
+| [08](./08%20-%20TCP/) | **TCP** | Reliable, connection-oriented transport — handshakes, flow control, and why most traffic uses it |
+| [09](./09%20-%20UDP/) | **UDP** | Fast, connectionless alternative — when reliability is traded for speed, and how attackers exploit that |
+| [10](./10%20-%20DNS/) | **DNS** | How domain names resolve to IPs — one of the most attacked and misunderstood protocols in existence |
+| [11](./11%20-%20DHCP/) | **DHCP** | How devices automatically get IP addresses — and how attackers abuse this process (rogue DHCP) |
+| [12](./12%20-%20ARP/) | **ARP** | How IPs map to MACs on a local network — the foundation of layer 2 attacks like ARP poisoning |
+| [13](./13%20-%20ICMP/) | **ICMP** | The protocol behind `ping` and `traceroute` — used for diagnostics, recon, and tunneling |
+| [14](./14%20-%20HTTP%20%26%20HTTPS/) | **HTTP & HTTPS** | The backbone of the web — request/response cycles, headers, cookies, and what HTTPS actually protects |
+| [15](./15%20-%20TLS_SSL%20Fundamentals/) | **TLS/SSL Fundamentals** | How encrypted connections are established — certificates, handshakes, and where things go wrong |
+
+### 🏗️ Network Infrastructure
+
+| # | Topic | What You'll Learn |
+|---|-------|-------------------|
+| [16](./16%20-%20Routing/) | **Routing** | How packets find their way across networks — routing tables, static vs. dynamic, and common protocols |
+| [17](./17%20-%20Switching/) | **Switching** | How traffic moves inside a LAN — MAC tables, broadcast domains, and how switches differ from routers |
+| [18](./18%20-%20VLANs/) | **VLANs** | Logically segmenting a network on shared hardware — key for isolation and reducing attack surface |
+| [19](./19%20-%20NAT/) | **NAT** | How private IPs reach the public internet — and the security implications of address translation |
+| [20](./20%20-%20Proxy%20Servers/) | **Proxy Servers** | Intermediaries between clients and servers — forward, reverse, and transparent proxies explained |
+| [21](./21%20-%20Wireless%20Networking/) | **Wireless Networking** | How Wi-Fi works, 802.11 standards, WPA2/WPA3 authentication, and where wireless gets exploited |
+
+### 🔍 Security Tools
+
+| # | Topic | What You'll Learn |
+|---|-------|-------------------|
+| [22](./22%20-%20Wireshark/) | **Wireshark** | Capturing and analyzing real traffic — the single most important skill for understanding protocols in practice |
+| [23](./23%20-%20Nmap/) | **Nmap** | Network scanning and host discovery — mapping what's running, what ports are open, and what OS is in use |
+| [24](./24%20-%20Packet%20Sniffing/) | **Packet Sniffing** | Passively capturing traffic, what's visible in plaintext, and why encryption is non-negotiable |
+
+### ⚔️ Attack Techniques
+
+| # | Topic | What You'll Learn |
+|---|-------|-------------------|
+| [25](./25%20-%20ARP%20Poisoning/) | **ARP Poisoning** | Manipulating ARP caches to redirect traffic — a classic layer 2 attack explained from first principles |
+| [26](./26%20-%20DNS%20Spoofing/) | **DNS Spoofing** | Feeding false DNS responses to redirect users — how it works, how to execute it in a lab, how to detect it |
+| [27](./27%20-%20Man-in-the-Middle%20Attacks/) | **Man-in-the-Middle Attacks** | Intercepting communication between two parties — combining techniques into a full attack chain |
+| [28](./28%20-%20Wi-Fi%20Attacks/) | **Wi-Fi Attacks** | WPA2 handshake cracking, evil twin APs, deauth attacks, and why public Wi-Fi is dangerous |
+
+### 🛡️ Defense & Architecture
+
+| # | Topic | What You'll Learn |
+|---|-------|-------------------|
+| [29](./29%20-%20Firewalls/) | **Firewalls** | Filtering traffic with rules — stateless vs. stateful, where firewalls sit, and what they can and can't stop |
+| [30](./30%20-%20IDS%20%26%20IPS/) | **IDS & IPS** | Detecting and blocking malicious traffic — signatures, anomaly detection, and network placement |
+| [31](./31%20-%20VPNs/) | **VPNs** | Encrypted tunnels over public networks — protocols, use cases, and why VPNs aren't magic |
+| [32](./32%20-%20Tunneling/) | **Tunneling** | Encapsulating one protocol inside another — used for bypassing filters and maintaining covert access |
+| [33](./33%20-%20Pivoting/) | **Pivoting** | Using a compromised machine as a foothold to move laterally through a network |
+| [34](./34%20-%20Network%20Segmentation/) | **Network Segmentation** | Dividing a network into zones to contain breaches and limit lateral movement |
+| [35](./35%20-%20Zero%20Trust%20Networking/) | **Zero Trust Networking** | The modern security model — never trust, always verify, regardless of network location |
+| [36](./36%20-%20Load%20Balancers/) | **Load Balancers** | Distributing traffic across servers — how they work and how they affect visibility and security |
+| [37](./37%20-%20Cloud%20Networking%20Basics/) | **Cloud Networking Basics** | How networking concepts translate to cloud — VPCs, security groups, and cloud-native attack surfaces |
 
 ---
 
-> ⚠️ The offensive techniques in this repo (ARP poisoning, DNS spoofing, MITM, Wi-Fi attacks) are for educational purposes only. Practice in a lab environment or on networks you have explicit permission to test. Unauthorized attacks are illegal.
+## Recommended Learning Path
+
+The modules are numbered in the intended order. Follow them sequentially — each topic builds on the previous one.  
+A suggested learning path is also available in [`learning_order.txt`](./learning_order.txt).
+
+---
+
+## Who This Is For
+
+- Complete beginners who want to understand networking properly before touching security tools
+- Students preparing for certifications like **CompTIA Network+**, **Security+**, **CEH**, or **OSCP**
+- CTF players and ethical hackers who realized their networking foundation has gaps
+- Anyone who wants to stop running tools they don't fully understand
+
+---
+
+## ⚠️ Ethical Use
+
+The offensive techniques covered in this repo — ARP poisoning, DNS spoofing, MITM attacks, Wi-Fi attacks — are documented for **educational purposes only**.
+
+Only practice these techniques in your own lab environment or on networks you have explicit, written permission to test. Unauthorized network attacks are illegal in most jurisdictions and carry serious consequences.
+
+---
+
+## Contributing
+
+Found an error, want to expand a topic, or have a better explanation? PRs and issues are welcome.
+
+---
+
+<div align="center">
+<sub>Built for anyone serious about understanding networks from the ground up.</sub>
+</div>
