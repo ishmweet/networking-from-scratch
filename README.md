@@ -6,7 +6,7 @@
 From how a packet moves across a wire to how attackers exploit that movement — built bottom-up, no shortcuts.
 
 ![Topics](https://img.shields.io/badge/Topics-37-blue?style=flat-square)
-![Level](https://img.shields.io/badge/Level-Beginner%20→%20Intermediate-green?style=flat-square)
+![Level](https://img.shields.io/badge/Level-Beginner%20%E2%86%92%20Advanced-green?style=flat-square)
 ![Focus](https://img.shields.io/badge/Focus-Cybersecurity-red?style=flat-square)
 
 </div>
