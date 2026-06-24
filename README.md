@@ -42,8 +42,8 @@ Go slow. The fundamentals compound.
 
 | # | Topic | What You'll Learn |
 |---|-------|-------------------|
-| [01](./01%20-%20Networking%20Fundamentals/) | **Networking Fundamentals** | What networks are, how devices communicate, and the vocabulary used everywhere else in this field |
-| [02](./02%20-%20OSI%20Model/) | **OSI Model** | The 7-layer framework — not just the names, but what each layer *actually does* and what breaks when it fails |
+| [01](./01%20-%20Networking%20Fundamentals/01.md) | **Networking Fundamentals** | What networks are, how devices communicate, and the vocabulary used everywhere else in this field |
+| [02](./02%20-%20OSI%20Model/02.md) | **OSI Model** | The 7-layer framework — not just the names, but what each layer *actually does* and what breaks when it fails |
 | [03](./03%20-%20TCP%20%26%20IP%20Model/) | **TCP/IP Model** | The real-world implementation of networking layers — how the internet is actually built |
 | [04](./04%20-%20MAC%20Addresses/) | **MAC Addresses** | Hardware-level addressing, how switches use MACs, and why they matter for local network attacks |
 | [05](./05%20-%20IP%20Addressing/) | **IP Addressing** | IPv4/IPv6, address classes, public vs. private IPs, and how every device on the internet gets identified |
